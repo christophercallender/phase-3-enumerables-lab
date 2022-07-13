@@ -1,5 +1,3 @@
-require "pry"
-
 def spicy_foods
   [
     { name: "Green Curry", cuisine: "Thai", heat_level: 9 },
@@ -31,7 +29,7 @@ def sort_by_heat(spicy_foods)
 end
 
 def print_spiciest_foods(spicy_foods)
-  print_spicy_foods(spicy_foods.select { |food| food[:heat_level] > 5 })
+  print_spicy_foods(spiciest_foods(spicy_foods))
 end
 
 def average_heat_level(spicy_foods)
